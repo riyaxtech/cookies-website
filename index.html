@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Cookies</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="data:,">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Bebas+Neue&family=Climate+Crisis&family=Comforter&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+	<link rel="stylesheet" href="./style.css?v=3">
+
+</head>
+
+<body>
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="preloader__content">
+			<img src="./src/assets/preloaderimg.png" alt="Loading Cookie" class="preloader__image">
+			<div class="preloader__text">Loading...</div>
+		</div>
+	</div>
+
+
+	<!-- Header -->
+
+	<div class="return-btn" id="return-btn" tabindex="0">
+		<img src="https://bato-web-agency.github.io/bato-shared/img/donut-landing/return-arrow.svg"
+			alt="Return Arrow Icon">
+	</div>
+
+	<header class="header">
+		<div class="container">
+			<a href="/" class="header__logo">
+			</a>
+
+			<nav class="header__nav">
+				<ul class="header__list">
+					<li class="header__item">
+						<a class="link-animation" href="#flip">
+							Home
+						</a>
+					</li>
+					<li class="header__item">
+						<a class="link-animation" href="#steps">
+							Flavors
+						</a>
+					</li>
+					<li class="header__item">
+						<a class="link-animation" href="#numbers">
+							Our story
+						</a>
+					</li>
+					<li class="header__item">
+						<a class="link-animation" href="#final">
+							Contact Us
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<button class="primary__btn header__btn">
+				Order Now
+			</button>
+
+			<div class="header__btn-toggle" id="openMenu">
+				<i></i>
+				<i></i>
+				<i></i>
+			</div>
+		</div>
+
+		<!-- Mobile Menu -->
+
+		<div class="mobile-menu" id="mobile-menu">
+			<div class="container">
+				<div class="mobile-menu__top">
+					<a href="/" class="header__logo">
+						<!-- Logo image handled by desktop header or another layout -->
+					</a>
+
+					<div class="mobile-menu__close" id="closeMenu">
+						<i></i>
+						<i></i>
+					</div>
+				</div>
+				<div class="mobile-menu__bottom">
+					<nav class="mobile-menu__nav">
+						<ul class="mobile-menu__list">
+							<li class="mobile-menu__item">
+								<a href="#flip">
+									Flavors
+								</a>
+							</li>
+							<li class="mobile-menu__item">
+								<a href="#steps">
+									Offline shops
+								</a>
+							</li>
+							<li class="mobile-menu__item">
+								<a href="#numbers">
+									Some history
+								</a>
+							</li>
+							<li class="mobile-menu__item">
+								<a href="#final">
+									Delivery & payment
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+					<button class="primary__btn mobile-menu__btn">
+						Order Now
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Main Content -->
+
+	<main class="main">
+		<div class="flip__figures">
+			<img class="flip__first-figure"
+				src="https://bato-web-agency.github.io/bato-shared/img/donut-landing/flip-figure.svg" alt="flip figure"
+				width="659" height="658" loading="lazy">
+			<img class="flip__second-figure"
+				src="https://bato-web-agency.github.io/bato-shared/img/donut-landing/flip-figure.svg" alt="flip figure"
+				width="659" height="658" loading="lazy">
+			<img class="flip__third-figure"
+				src="https://bato-web-agency.github.io/bato-shared/img/donut-landing/flip-figure.svg" alt="flip figure"
+				width="659" height="658" loading="lazy">
+		</div>
+
+		<!-- Model Container -->
+
+		<div class="model">
+			<div class="model-wrapper">
+				<div class="donut" id="donut"></div>
+			</div>
+		</div>
+
+		<div class="hero__pointer" id="scroll-btn" tabindex="0">
+			<svg class="hero__arrow" width="48" height="48" viewBox="0 0 48 48" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<circle cx="24" cy="24" r="23" stroke="#3d2314" stroke-width="2" />
+				<path d="M24 14V32M16 24L24 32L32 24" stroke="#3d2314" stroke-width="2" stroke-linecap="round"
+					stroke-linejoin="round" />
+			</svg>
+		</div>
+
+		<!-- Hero Section -->
+
+		<section class="hero" id="hero">
+			<div class="hero__bg-shapes"></div>
+			<a href="/" class="top-left-logo-link">
+				<img src="./src/assets/top corner image.png" alt="COOKIES" class="top-left-img">
+			</a>
+			<img src="./src/assets/bottom-right Corner.png" class="bottom-right-img" alt="" />
+
+			<div class="container hero__container">
+				<div class="hero__top">
+					<div class="hero__heading-box">
+						<span class="hero__text">Bakery</span>
+						<h1 class="hero__heading">
+							<span>C</span>
+							<span class="cookie-o-container">
+								<img src="./src/assets/cookie.png" class="cookie-o-img cookie-state-1" alt="O" />
+							</span>
+							<span class="empty-o">
+								<img src="./src/assets/cookie.png" class="cookie-placeholder-img" alt="O" style="width: 100%; height: 100%; object-fit: contain; display: block; pointer-events: none;" />
+							</span>
+							<span>KIES</span>
+						</h1>
+						<span class="hero__second-text">
+							Baked with love, made to delight.<br>
+							Fresh cookies for every moment.
+						</span>
+						<button class="primary__btn hero__btn">
+							Order Now
+						</button>
+					</div>
+				</div>
+
+				<div class="hero__bottom"></div>
+			</div>
+		</section>
+
+		<!-- Transition Section -->
+
+		<div id="transition"></div>
+
+		<!-- Flip Section -->
+
+		<section class="flip" id="flip">
+			<div class="container flip__container">
+				<div class="flip__heading-box heading-box">
+					<h2 class="flip__heading">
+						<div><span class="heading__special">BAKED</span> <span class="heading__normal">FRESH</span>
+						</div>
+						<div><span class="heading__special">EVERY</span> <span class="heading__normal">SINGLE DAY</span>
+						</div>
+					</h2>
+					<p class="flip__text">
+						Our cookies are baked daily using premium ingredients, rich butter, and real chocolate. Every
+						batch is crafted to deliver the perfect balance of crunch and softness.
+					</p>
+				</div>
+				<div class="flip__content">
+					<div class="flip__stats">
+						<div class="flip__stat">
+							<span class="flip__stat-number">100%</span>
+							<span class="flip__stat-text">Fresh Ingredients</span>
+						</div>
+						<div class="flip__stat">
+							<span class="flip__stat-number">25+</span>
+							<span class="flip__stat-text">Cookie Flavors</span>
+						</div>
+						<div class="flip__stat">
+							<span class="flip__stat-number">10K+</span>
+							<span class="flip__stat-text">Happy Customers</span>
+						</div>
+					</div>
+					<div class="flip__splash-container">
+						<img src="./src/assets/Ani-cookiecrubs.png" alt="Splash" class="flip__splash-img">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Steps Section -->
+
+		<section class="steps" id="steps">
+			<div class="steps__indicators">
+				<div class="steps__indicator"></div>
+				<div class="steps__indicator"></div>
+				<div class="steps__indicator"></div>
+				<div class="steps__indicator"></div>
+			</div>
+			<div class="steps__cards">
+				<div class="steps__card-first steps__card-chocochip"
+					style="background-image: url('./src/assets/chocochip-bg.png');">
+					<div class="steps__card-shadow-layer"></div>
+					<div class="steps__card-content">
+						<div class="steps__card-left">
+							<h3 class="steps__card-title">Chocolate Chip</h3>
+							<p class="steps__card-desc">
+								Loaded with rich chocolate<br>
+								chips and baked<br>
+								to golden perfection. Crispy<br>
+								edges, soft center.
+							</p>
+						</div>
+						<div class="steps__card-center">
+							<img src="./src/assets/cookie.png" alt="Chocolate Chip Cookie"
+								class="steps__card-cookie-img">
+							<p class="steps__card-script">Classic Favorite</p>
+						</div>
+						<div class="steps__card-right">
+							<div class="steps__card-rating-box">
+								<p class="steps__card-rating-title">Most Loved Collection</p>
+								<div class="steps__card-rating-stars">
+									<span class="star">★</span><span class="star">★</span><span
+										class="star">★</span><span class="star">★</span><span class="star">★</span>
+									<span class="rating-text">4.9 Rating</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="steps__card steps__card-doublechoco"
+					style="background-image: url('./src/assets/doublechoco-bg.png');">
+					<div class="steps__card-shadow-layer"></div>
+					<div class="steps__card-content">
+						<div class="steps__card-left">
+							<h3 class="steps__card-title">Double Chocolate</h3>
+							<p class="steps__card-desc">
+								Dark cocoa dough packed<br>
+								with premium<br>
+								chocolate chunks for intense<br>
+								flavor.
+							</p>
+						</div>
+						<div class="steps__card-center">
+							<img src="./src/assets/chococookie.png" alt="Double Chocolate Cookie"
+								class="steps__card-cookie-img">
+							<p class="steps__card-script">Chocolate Lover's Dream</p>
+						</div>
+						<div class="steps__card-right">
+							<div class="steps__card-rating-box">
+								<p class="steps__card-rating-title">Most Loved Collection</p>
+								<div class="steps__card-rating-stars">
+									<span class="star">★</span><span class="star">★</span><span
+										class="star">★</span><span class="star">★</span><span class="star">★</span>
+									<span class="rating-text">4.9 Rating</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="steps__card steps__card-redvelvet"
+					style="background-image: url('./src/assets/redvelvet-bg.png');">
+					<div class="steps__card-shadow-layer"></div>
+					<div class="steps__card-content">
+						<div class="steps__card-left">
+							<h3 class="steps__card-title">Red Velvet</h3>
+							<p class="steps__card-desc">
+								A rich red velvet cookie with<br>
+								a soft center<br>
+								and creamy sweetness in<br>
+								every bite.
+							</p>
+						</div>
+						<div class="steps__card-center">
+							<img src="./src/assets/redvelvetcookie.png" alt="Red Velvet Cookie"
+								class="steps__card-cookie-img">
+							<p class="steps__card-script">Smooth & Indulgent</p>
+						</div>
+						<div class="steps__card-right">
+							<div class="steps__card-rating-box">
+								<p class="steps__card-rating-title">Most Loved Collection</p>
+								<div class="steps__card-rating-stars">
+									<span class="star">★</span><span class="star">★</span><span
+										class="star">★</span><span class="star">★</span><span class="star">★</span>
+									<span class="rating-text">4.9 Rating</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="steps__card steps__card-pistachio"
+					style="background-image: url('./src/assets/pistachio-bg.png');">
+					<div class="steps__card-shadow-layer"></div>
+					<div class="steps__card-content">
+						<div class="steps__card-left">
+							<h3 class="steps__card-title">Pistachio Crunch</h3>
+							<p class="steps__card-desc">
+								Crunchy pistachios blended<br>
+								into a buttery<br>
+								cookie for a refined gourmet<br>
+								experience.
+							</p>
+						</div>
+						<div class="steps__card-center">
+							<img src="./src/assets/pistachiocookie.png" alt="Pistachio Cookie"
+								class="steps__card-cookie-img">
+							<p class="steps__card-script">Nutty Elegance</p>
+						</div>
+						<div class="steps__card-right">
+							<div class="steps__card-rating-box">
+								<p class="steps__card-rating-title">Most Loved Collection</p>
+								<div class="steps__card-rating-stars">
+									<span class="star">★</span><span class="star">★</span><span
+										class="star">★</span><span class="star">★</span><span class="star">★</span>
+									<span class="rating-text">4.9 Rating</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Second Transition Section -->
+
+		<div id="second-transition"></div>
+
+		<!-- Combined Section Wrapper -->
+		<div id="numbers-wrapper">
+			<!-- Quality Section -->
+			<section class="quality" id="numbers">
+				<div class="container quality__container">
+					<div class="quality__content">
+						<h2 class="quality__heading">
+							MADE WITH<br>
+							<span class="heading__special">LOVE</span> & QUALITY
+						</h2>
+						<div class="quality__divider"></div>
+						<p class="quality__text">
+							We believe the best cookies start with the best ingredients. That's why we use real butter,
+							premium chocolate, and no preservatives.
+						</p>
+
+						<div class="quality__features">
+							<div class="quality__feature">
+								<div class="quality__feature-icon">
+									<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#3d2314"
+										stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+										<path d="M8 2h8"></path>
+										<path d="M9 2v2.789a4 4 0 0 1-.672 2.219l-.656.984A4 4 0 0 0 7 10.212V20a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-9.789a4 4 0 0 0-.672-2.219l-.656-.984A4 4 0 0 1 15 4.788V2"></path>
+										<path d="M7 15a6.472 6.472 0 0 1 5 0 6.47 6.47 0 0 0 5 0"></path>
+									</svg>
+								</div>
+								<span class="quality__feature-text">Real Butter</span>
+							</div>
+							<div class="quality__feature">
+								<div class="quality__feature-icon">
+									<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#3d2314"
+										stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+										<path
+											d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 1 8.3C18 16 15 20 11 20z">
+										</path>
+										<path d="M11 20c.5-4.5 3-7 5.5-8"></path>
+									</svg>
+								</div>
+								<span class="quality__feature-text">No Preservatives</span>
+							</div>
+							<div class="quality__feature">
+								<div class="quality__feature-icon">
+									<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#3d2314"
+										stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+										<rect x="5" y="4" width="14" height="16" rx="2" ry="2"></rect>
+										<line x1="5" x2="19" y1="12" y2="12"></line>
+										<line x1="12" x2="12" y1="4" y2="20"></line>
+									</svg>
+								</div>
+								<span class="quality__feature-text">Premium Chocolate</span>
+							</div>
+							<div class="quality__feature">
+								<div class="quality__feature-icon">
+									<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#3d2314"
+										stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+										<path d="m4.6 13.11 5.79-3.21c1.89-1.05 4.79 1.78 3.71 3.71l-3.22 5.81C8.8 23.16.79 15.23 4.6 13.11Z"></path>
+										<path d="m10.5 9.5-1-2.29C9.2 6.48 8.8 6 8 6H4.5C2.79 6 2 7.5 2.71 9c.46.97 1.35 1.77 2.29 2.5"></path>
+										<path d="m14.5 13.5 2.29 1c.73.3 1.21.7 1.21 1.5v3.5c0 1.71-1.5 2.5-3 1.79-.97-.46-1.77-1.35-2.5-2.29"></path>
+									</svg>
+								</div>
+								<span class="quality__feature-text">Freshly Baked</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+	</main>
+
+	<!-- Promo Banner -->
+	<section class="promo-banner">
+		<div class="container promo-banner__container">
+			<div class="promo-banner__left">
+				<img src="./src/assets/cookie.png" alt="Promo Cookie" class="promo-banner__cookie">
+				<div class="promo-banner__text-box">
+					<h3 class="promo-banner__heading">GET <span class="highlight">10% OFF</span><br>ON YOUR FIRST ORDER!
+					</h3>
+					<p class="promo-banner__subtext">Fresh cookies, special offers,<br>and sweeter moments await you.
+					</p>
+				</div>
+			</div>
+			<div class="promo-banner__right">
+				<div class="promo-banner__code-box">
+					<span class="promo-banner__code-label">USE CODE:</span>
+					<span class="promo-banner__code-value">SWEET10</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Trust Features -->
+	<section class="trust-features">
+		<div class="container trust-features__container">
+			<div class="trust-feature">
+				<div class="trust-feature__icon" style="background-color: #3d2314;"><img src="./src/assets/cookie.png"
+						alt="Premium Ingredients" width="24" height="24"></div>
+				<div class="trust-feature__text-box">
+					<h4 class="trust-feature__title">PREMIUM<br>INGREDIENTS</h4>
+					<p class="trust-feature__text">We source the finest<br>ingredients for rich taste<br>and perfect
+						texture.</p>
+				</div>
+			</div>
+			<div class="trust-feature__divider"></div>
+			<div class="trust-feature">
+				<div class="trust-feature__icon" style="background-color: #d59a74;"><svg width="24" height="24"
+						viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round">
+						<path
+							d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+						</path>
+					</svg></div>
+				<div class="trust-feature__text-box">
+					<h4 class="trust-feature__title">BAKED<br>WITH LOVE</h4>
+					<p class="trust-feature__text">Every cookie is baked<br>with care and passion<br>in every bite.</p>
+				</div>
+			</div>
+			<div class="trust-feature__divider"></div>
+			<div class="trust-feature">
+				<div class="trust-feature__icon" style="background-color: #3d2314;"><svg width="24" height="24"
+						viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round">
+						<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+					</svg></div>
+				<div class="trust-feature__text-box">
+					<h4 class="trust-feature__title">QUALITY<br>YOU CAN TRUST</h4>
+					<p class="trust-feature__text">Consistent quality,<br>hygienic baking, and<br>100% satisfaction.</p>
+				</div>
+			</div>
+			<div class="trust-feature__divider"></div>
+			<div class="trust-feature">
+				<div class="trust-feature__icon" style="background-color: #d59a74;"><svg width="24" height="24"
+						viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round">
+						<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+						<circle cx="9" cy="7" r="4"></circle>
+						<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+						<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+					</svg></div>
+				<div class="trust-feature__text-box">
+					<h4 class="trust-feature__title">HAPPY<br>CUSTOMERS</h4>
+					<p class="trust-feature__text">Loved by thousands of<br>cookie lovers across<br>the city and beyond.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	</div>
+
+	<!-- CTA Section -->
+	<section class="cta-section">
+		<div class="container cta-section__container">
+			<div class="cta-section__left">
+			</div>
+			<div class="cta-section__right">
+				<h2 class="cta-section__heading">READY FOR YOUR<br>NEXT COOKIE FIX?</h2>
+				<p class="cta-section__text">Whether you're sharing with friends or treating yourself, our
+					freshly<br>baked cookies are always made to bring a little extra happiness.</p>
+				<div class="cta-section__ratings">
+					<div class="cta-section__stars">
+						<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span> <span
+							class="rating-number">4.9 Rating</span>
+					</div>
+					<div class="cta-section__customers">10,000+ Happy Customers</div>
+				</div>
+				<button class="primary__btn cta-section__btn" style="background-color: white; color: #3d2314;">Order
+					Fresh Cookies <span class="btn-arrow"
+						style="background-color: #3d2314; color: white; border-radius: 50%; padding: 2px 6px; margin-left: 10px;">↗</span></button>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="site-footer">
+		<div class="container site-footer__container">
+			<div class="site-footer__brand">
+				<h2 class="site-footer__logo"><span style="color: white;">COOK</span><span
+						style="color: #d59a74;">IES</span><br><span
+						style="font-size: 0.3em; letter-spacing: 5px;">BAKERY</span></h2>
+				<p class="site-footer__tagline">Baked with love, delivered with joy. Thank you for being a part of our
+					cookie story!</p>
+				<div class="site-footer__socials">
+					<a href="#" class="social-icon"
+						style="background-color: #d59a74; color: white; border-radius: 10%; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; font-size: 18px; font-family: 'Outfit', sans-serif; font-weight: 600;">f</a>
+					<a href="#" class="social-icon"
+						style="background-color: #d59a74; color: white; border-radius: 10%; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; font-size: 18px; font-family: 'Outfit', sans-serif; font-weight: 600;">in</a>
+					<a href="#" class="social-icon"
+						style="background-color: #d59a74; color: white; border-radius: 10%; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; font-size: 18px; font-family: 'Outfit', sans-serif; font-weight: 600;">tw</a>
+				</div>
+			</div>
+			<div class="site-footer__links">
+				<h4 class="site-footer__title">QUICK LINKS</h4>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Our Story</a></li>
+					<li><a href="#">All Flavors</a></li>
+				</ul>
+			</div>
+			<div class="site-footer__links">
+				<h4 class="site-footer__title">CUSTOMER CARE</h4>
+				<ul>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Returns & Refunds</a></li>
+					<li><a href="#">Terms & Conditions</a></li>
+				</ul>
+			</div>
+			<div class="site-footer__contact">
+				<h4 class="site-footer__title">CONTACT US</h4>
+				<ul>
+					<li>📞 +1 (900) 000 0000</li>
+					<li>✉ hello@cookiesbakery.com</li>
+					<li>📍 123 Cookie Street,<br>Sweet City, India - 000000</li>
+				</ul>
+			</div>
+		</div>
+		<div class="site-footer__bottom">
+			<p>&copy; 2026 Cookies Bakery. All Rights Reserved.</p>
+		</div>
+	</footer>
+
+	<script type="importmap">
+	{
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+</script>
+	<script src='https://bato-web-agency.github.io/bato-shared/js/preview.js?v=1.1'></script>
+	<script src='https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js'></script>
+	<script src='https://unpkg.com/lenis@1.3.4/dist/lenis.min.js'></script>
+	<script type="module" src="./script.js?v=3"></script>
+
+	<script>
+		// Force the scroll to top button to the requested colors (targets the injected preview script button)
+		window.addEventListener('load', () => {
+			setTimeout(() => {
+				document.querySelectorAll('div, a, button').forEach(el => {
+					const style = window.getComputedStyle(el);
+					// Identify the circular scroll-to-top button in the bottom corner
+					if (style.position === 'fixed' && parseInt(style.bottom) < 100 && (style.borderRadius === '50%' || style.borderRadius.includes('px'))) {
+						// Only target if it looks like the pink button or is clearly a floating action button
+						if (el.innerHTML.includes('svg') || el.innerHTML.includes('↑') || style.backgroundColor.includes('rgb(255')) {
+							el.style.setProperty('background-color', '#f6ece3', 'important');
+							el.style.setProperty('background', '#f6ece3', 'important');
+							const svgs = el.querySelectorAll('svg');
+							svgs.forEach(svg => {
+								svg.style.setProperty('stroke', '#3d2314', 'important');
+							});
+							const paths = el.querySelectorAll('path, polyline');
+							paths.forEach(p => p.style.setProperty('stroke', '#3d2314', 'important'));
+						}
+					}
+				});
+			}, 1000);
+		});
+	</script>
+</body>
+
+</html>
